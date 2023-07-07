@@ -1,0 +1,38 @@
+{
+  "name": "all-assignments",
+  "version": "1.0.0",
+  "main": "anagram.js",
+  "directories": {
+    "test": "tests"
+  },
+  "jest": {
+    "testTimeout": 10000
+  },
+  "scripts": {
+    "test-anagram": "npx jest ./tests/anagram.test.js",
+    "test-calculator": "npx jest ./tests/calculator.test.js",
+    "test-duplicate-transactions": "npx jest ./tests/duplicate-transactions.test.js",
+    "test-expenditure-analysis": "npx jest ./tests/expenditure-analysis.test.js",
+    "test-palindrome": "npx jest ./tests/palindrome.test.js",
+    "test-todo-list": "npx jest ./tests/todo-list.test.js",
+    "test-all": "npx jest ./tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratyush6717/all-assignments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratyush6717/all-assignments/issues"
+  },
+  "homepage": "https://github.com/pratyush6717/all-assignments#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "description": ""
+}

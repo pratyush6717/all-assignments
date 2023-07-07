@@ -7,6 +7,25 @@
 */
 
 function isPalindrome(str) {
+  str=str.toUpperCase();
+   str = str.replace(/\s/g, '');
+  var i=0;
+  var length=str.length-1;
+  while(length>i){
+    if(str.charAt(i)==','||str.charAt(i)=='!'||str.charAt(i)=='?'||str.charAt(i)=='.'){
+      i++;
+    }
+    else if(str.charAt(length)==','||str.charAt(length)=='!'||str.charAt(length)=='?'||str.charAt(length)=='.'){
+      length--;
+    }
+    else if(str.charAt(i)!=str.charAt(length)){
+      return false;
+    }
+    else{
+    i++;
+    length--;
+    }
+  }
   return true;
 }
 
